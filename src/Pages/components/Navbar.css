@@ -1,28 +1,75 @@
-.Navbar{
-    margin: 5%;
-    position: top;
+.Navbar {
+    margin: 2% 5%;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
 }
-.NavbarList{
+
+.NavbarList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    justify-content: space-around;
-    background-color: beige;
-    border-radius: 20px;
+    justify-content: center;
+    background-color: #f5f5dc;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 5px;
 }
-.NavbarList li{
-    text-decoration: none;
+
+.NavbarList li {
     list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
+    margin: 5px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
 }
-.NavbarList li:hover{
-    background-color: rgb(223, 223, 183);
+
+.NavbarList li:hover {
+    background-color: #e8e8d0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.NavbarList li a{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none; 
-    color: inherit; 
+
+.NavbarList li:active {
+    transform: translateY(0);
+}
+
+.NavbarList li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+/* Optional: Add an underline effect on hover */
+.NavbarList li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #555;
+    transition: width 0.3s ease;
+}
+
+.NavbarList li:hover a::after {
+    width: 100%;
+}
+
+/* For active link */
+.NavbarList li.active {
+    background-color: #e0e0c0;
+}
+
+.NavbarList li.active a {
+    color: #000;
+    font-weight: 600;
 }

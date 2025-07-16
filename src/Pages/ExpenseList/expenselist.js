@@ -206,26 +206,15 @@ function Expenselist() {
             <p>No expenses recorded yet.</p>
           ) : (
             expenses.map((expense) => (
-              <div key={expense.id} className="expense-item">
-                <p>
-                  <b>Product:</b> {expense.item}
-                </p>
-                <p>
-                  <b>Amount:</b> {expense.amount}
-                </p>
-                <p>
-                  <b>Category:</b> {expense.category}
-                </p>
-                <p>
-                  <b>Description:</b> {expense.description}
-                </p>
-                <p>
-                  <b>Date:</b> {expense.date}
-                </p>
-                <p>
-                  <b>Day:</b> {expense.day}
-                </p>
-              </div>
+             <div className="expense-item">
+    <div className="expense-header">
+        <h3 className="expense-title">{expense.name}</h3>
+        <span className="expense-amount">${expense.amount.toFixed(2)}</span>
+    </div>
+    <span className="expense-category">{expense.category}</span>
+    <p className="expense-description">{expense.description}</p>
+    <p className="expense-date">{expense.date}</p>
+</div>
             ))
           )}
         </div>

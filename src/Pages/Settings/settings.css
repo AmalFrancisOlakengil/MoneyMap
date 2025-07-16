@@ -1,13 +1,70 @@
-.About{
-    margin: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.About {
+  margin: 30px auto;
+  max-width: 1000px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
-.aboutbox{
-    margin: 20px;
+
+.Title, .Title2 {
+  color: #4f9d9d;
+  margin: 20px 0;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.aboutbox {
+  background-color: #f9f9f9;
+  margin: 20px 0;
+  padding: 25px 30px;
+  border-radius: 12px;
+  border: 2px dashed #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.aboutbox:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.aboutbox h1 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.aboutbox p, .aboutbox li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.aboutbox ul {
+  padding-left: 20px;
+}
+
+.aboutbox li {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .Title, .Title2 {
+    font-size: 1.6rem;
+  }
+
+  .aboutbox {
     padding: 20px;
-    border-radius: 10px;
-    border-style: dashed;
+  }
+
+  .aboutbox h1 {
+    font-size: 1.2rem;
+  }
+
+  .aboutbox p, .aboutbox li {
+    font-size: 0.95rem;
+  }
 }
