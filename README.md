@@ -1,4 +1,5 @@
-
+### Note  
+Works on Edge, Chrome, and Chromium Browsers. Doesn't work on Firefox.
 # MonepMap
 
 MoneyMap is a lightweight personal finance tracker built with modern web technologies that stores your expense data locally in the browser using IndexedDB — no server, no cloud, just private and fast tracking.
