@@ -58,7 +58,7 @@ If you have any feedback, please reach out to us at fake@fake.com
 
 
 ## Demo
-[![Watch the video](https://img.youtube.com/vi/jLEtfJiYI9M/0.jpg)](https://www.youtube.com/watch?v=jLEtfJiYI9M)
+[![Watch the video](https://img.youtube.com/vi/jLEtfJiYI9M/0.jpg)](https://www.youtube.com/watch?v=jLEtfJiYI9M)   
 [Live Demo - click here](moneymap-pi.vercel.app)
 
 
